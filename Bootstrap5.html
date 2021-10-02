@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img
+      src="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5ff876c60777630771bbe35a%2F0x0.jpg"
+      alt="Viego" width="60" height="40" class="rounded">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Recommendations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid mx-0 px-0">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" height="450" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqjylCAMrnMkq5uftaJWKuFpy87j33IHtBkg&usqp=CAU" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block mb-5 bg-white border rounded mx-auto" style="width: 50% !important; ">
+            <h5 class="text-dark text-uppercase">First Slide</h5>
+            <p class="text-dark">Lorem ipsum dolor sit amet.</p>
+            <button class="btn btn-primary">
+              Shop Now
+            </button>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" height="450" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgVFhYYGRgaGBgcGhoaGBgYGBkcGRkZGRocGBgcIS4lHB4rIRgaJjgmLS8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjQrJCQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDE0NDQ0NDQ0NDQ0NP/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAECBQAGB//EAD4QAAEDAgQDBQcDAgUDBQAAAAEAAhEDIQQSMUFRYXEFIoGRoQYTMrHB0fBCUuFyghQjYpLxM7LCFiRDU6L/xAAYAQADAQEAAAAAAAAAAAAAAAAAAQIDBP/EACARAQEBAQACAgMBAQAAAAAAAAABEQIhMRJBAyJhUXH/2gAMAwEAAhEDEQA/APlbBHAj80KL7mRLfLcIbZV2kgzcHikqAPZB4Kierw9s/qHqOCThKUWYs1yvlkSPHqEIIuHf3i3j6Hb7eKYWARGG0FWEO2gjXqqubCehIZeyu+gdQOqGCjMqEdE5QEG8VwanMjXjgUs6kWmHfgTwlYRWPQ8quyyZiFS1u6iUSmZshNEaJCHCKGxZWbSJE9PWfsVRG8NgTWYXMEubGYWvMwR5Jd2FeBOUwLOse6eB4IOG7VNJ8tb3mnQ6HyMrWf7c1SQfdUQYgnK4lw4Ol0OHWVHyyq+Os9jUSlTzEAblZ2J7UL3EkNE7NaGgdABZKtxEXyjxa087Eiyfz/yCcf16Wjhsxyi5gmN7Ak+gPkoOGhK9i16b3jP3HkiKg01EioOBvcHqvROwsEgjRXzfkXXOM2jhCTELZoYMNbr1UMhnVFpuLhHNV8RKYY4CwWlTbYE3WfSZCadWyjxA8yB9VWYmmDVhTV7dIAGUWGqyMTij4rIxGJPFF8jBO1cWXuJKyHI5cTsrOplrZOqjrrFc8k3EASfALIxJkrSxuvgs54Wd8mVcLKA1HLVGVIypUKztSqoC9SgRB2OhCo1x4lFw+ILenBTXa03G6nVZLNgYcd0F7bwjtauq07zxCml9FoUuGh6+kfdEDFNUdwf1H1A+yYMnvNDx0d1G/ioaeKr2ZWAdld8LrHkditHFdnOZfVvEfXgnShKrQi4uOP34KjTtsnqD7ZSBy5IFahFxop07A2uhMtcHjKddilQVdvkVfNwrHBhnLF5hWc1Xq94T+oeo4qKlXMS7c3PXcqghgV2i6hgWhQwQN3vyjpmJ5AJyJrqNPPYAk+a2OzeyapzD3FR7TrlYcw4OaY1HA6gkc1XBYllOzGZj+5506MEBvU3TL/aUMuMz38S4hg5AfEepI6K5n3U5WH7QezdZg94ab8uhJY9hPA5XAGekjgTErDw+FY+xqZHDZ7XQejhMeIXusT7bVXsyPyhmmUCCeXRYrsfSf8TIHBunjmJWfU59xfOs7CYRgMFzfQn5p99FuSWsz8zbyG/olHvYXyGEMB0kXA48V6XB1WPpODIdFw0nKdBI025WusrbG3MleNx2GyOJHjeY8Qtv2f7Ye4e7ex7wB3XtElg/a4mxbwkiFrdmdkMeTXqNgBjiGmO842pi2t79G87uUqZC145vtn1ZuLMpFxBgjqiIzHQErj6sMdlu4CR1F1ujBhUhKdqYrKyTaHMPk9p+iiljGvY14m404HceBss7t580TxltvEIt8DPJ6rUkpb3BJSOBxJc0GdLJupj8mWQLvjrYqL0c5H9yGCTqksU+SSVbE4rNcrPxFZZ3yr0XxL5KVLUV6G8oIMqIspRGNslBSFUXKEmMS2HIMlKhWFYKFIUwCsaYJ23VnnugqjXkK7RLSOH1Sqp5AQ6hOXxH1RCFJZIP5z+iNIBoXqex+0Q9mV3xNFx+5vH858l5dqYwzy1wc0wRoR0T/g+9emxPZ7HjMwgHhIjy2WZVY5lnCD6Hod0zhcQKmgAf+20P5s4O/wBPlwRnVQ4QR1nY8xqCllVsrJcyeR47eKoWJqswD4T4JclNFXo1IsdFV9ODHkpDJ08t1dl7H+Qq56/0YHTMGVqsqACTroOQH56pGnTv8lZ54noFWkI+ubxvZAdTdzvyKYpDh5phrmsEm3zKJC1nOwzokggBEwxymW2PHfn0C7EYovNhAGn36pTE1yO4yS7eNv5U9Zbi+dh8gvzlsQzzINiQCb3jT+Vq+ymLos94yvmcxzZIkB9rNfSd+l7Zm2o4wvN4I2yubaLayLzI4Wsq58rrEjWDvBkEH83UTdVcx9CdTrUzkrD3jJinXZGV7IDmOI0Pdc0mLjmiMcCsf2M7UNQuw1V4DHiKYc6Mj2yWFk2iXOBEz3ibp+q5zHFjhDgSCOBC6uPTK3yZe4IJykEEaiFRr51VXFUWvNYHGGk91N57uY34HSehWhj4cxw4j+bJLt3CknOBP7o15HmFn4XGloym424jp9llueKp2CxWR1/hNj90ftSt8EaAl0+Sz68SS3SVxeSBO0qT1oVK8oYcg1HDuga6n6D6+KuNOiITnuQ1JUhqVMJgkpmLdfkhOIFgr0XyDO3yRCoGNp2B8Pz1SeXknnOzNPSfJKsNkCKOCqjPpqgpKVKhM4c3vpoehQ20UVog8kuvME8VXE0C1xB/OBQwt6vRa+iDcVGb7PZsI/c2/UE8BOTkUS6u85SeSDcW2V2s4I9VsCeCSfW4WVyai+Bfe5Ver2o5xBcbxEj4nf1cVnPerUaZdfYKvSdPEvdFiARIJm4O44o1Ps4n9ebk2x8jdXwmMyjI8ZmcJgtPFh2Pod0zUw0jMw52cQLjk9v6T6HYlHs5n2CKMaT4ruq5weNZ8f5Xe+4t+n3U4azXkaKHPJMwrNrtFiyesg+YPzBRWNY74TDv2OFz/S4GHeh5JygNtRw0sqhkm9z+a8FV74kQeYPd8wgPqE224DT+UWlglStfKy50tx5cSlcXhXU35XawHefPjMrd7FwQb33agWn9PPqlO0K1OpWkuytgNDhcam5HC/kFXxybRu3Gf/iCABab3IBnz35ouDph7n5jGSlVeBxLWEiPG/8AaqV6IDi0nQkSLz05I9FrGOObP3mOaSADlzCCduKUw7pRjy3Revo9ssexlSqXOf8AC5rQcz8o+IuIhsje5mbLy+KwmQiHNewiWvbMOHMG7XDQtOnMEE6WFwJcxj80awOYJF+Vlpzb9JraodoiqYLQxpEN+IgQXEE6zMwTb4QbCyHiqD2mz3MPA94dRO3REw2Hd/hnueCP86m0CAQQ1lTNcjQkgeHJK4muGN+JvAN+OPIwPyyc632VmM/HYrEMsXWOhDWifRZL6k66/nBXxLy5xcS4k7uNygFRbppzKRU5KjiuCRi03jMJ0m5TdXEBwDGiG5pJPxOI0ngBe3NIhiZw7Rqghw1Ue/YKzihlMw1bDGM3MFcAi02RdIYHQHz+dknVbBhabmRPD8+qWxDCXSOXyQEypyqAUQPUKijQpIVwFJYgGsJXtlOo05jghvo/qGiWcj08XlBnh4FTefuKnX+k8e+BCy3o+IqZnEoTWyQFpJkZdXavQws6o4JZpommMB+GLbSpq0HEZiB6T5BK6cLd12ndPDY/ZTSrOY7cH5jgRoQgup87+Ss2qR3XiR6joUjP0cSAZDQJs5v6Hjh/pO44EbJttBrwSy8atNnt/qG4/wBQt00WOW7gyPUdQrUq1xJIjRw+Jv8ACqUsaDsKUNrCNRI4FHZiy0DOMzdnsifEaH0R25H6PaeRMHyP0lP4y+huFA2fjkjQO1c3kf3Dl5cC/S7JLQHWdNwRp4LN7QfkcADprHHgR4LQ7K7YyQD3mfqbu3mwn5b6c0uc5vkXzPBlncu4gBUq9hMfdhyTtEt/hH7ewBgVGuBZlBGsFp0c0/TWxGohJ4HtZtNgDrmSY4AD6laWzfKYy8dTcx8O1Bjla1uWYFVdhSGNfBg6GPr5+StXx/vnOzQCXEtP/iT4efUp3surnpPoO+JvebzjUfNc/VxtzJQux8IKmYumBpHEjX84rawlItYGbgkcjJkEeazPZ98F7f6T8x9ltMcMwJmBOmuh0W/GZ4Z9ezmIxTRSaHyGy7KwWLgMkE8JIJJ5rzXaOMD3WaA1oho+Z6ninu0CXszmwgwP72tjyn1WQxs946T8k/5BfN2qOZAzGL7cEg87JjGVpSUqKSyKxqACiByDXL0xRd8krFkShMiPwIBtyrkRgF2RAkQymCpqggTPCRtC4QEKtUkFTV74Xc8JN776ogdaPEqnuybwqQs9hGqlq0Th81rHoQgPwThsfJRFWX6LojXxqhVXhhulcTiJsFWFuLVcVJgIFSqguK5gTRqSVDArFHw1UNjujqUAG4vcJ/C46RDteP3TtRzHthzYPEfULIxOHy3GiWnmNJ7A7UJephTtfkUHB4k/CU9mRh6zg0tNrHgVfIHXFncNj0TbyDqJS5pcFODVaNUtsZy8v0nj/CI9ongeXwnmBt4eS51Mm5seI+q6lDmmm74tabuB1ynkduaXmH7RjJhjjFxBuDdsDbkWnxKphjcKKxmQdzI5Hh4/QK2DpzIgzHjYiU7fAk8tzBdpNdQfh6ji2HZqb4LgzZ7HgXyOIaQQLEEwcxWHimEHUEHQiYiY3AO3BMvwxD3t5Z/AgPPkJ8kLEsOVpi12+PxfJw8iiXRZhLImcNWLS1/6mkTzHP8APmjYJ+WcwzNIhzdMwkWnY8DsYKvjsJkflmWuDXMfEZmPGZrgOJB02MjZKnBsPiGtque0HI4lomxuQbDlC1/eDOLyNPA8FgVy3MMoJgAbeTQtUvDw1zRtBA4taJPIEXV/juXB1NjQ9oWZGU6Yv3GEnY/FlPiHT5LCxVeAAtz2qqQ8MP6KdNv/AOA4fNeVrmVUvguvYFQyhkIoaocFGkoArE2VHKTomBqbk3hBcpCmtLBjuzzTApseS55sDxJA8In5hWDS4gC5JgKmJ1hp7rRA4HcnxMophPcShvFlxfyVHP8ANICZUKpiIMIrjwVLfgRBUB3NQ7GPbo8+ZQqvVKvKJCtWq1nOOYmShqJVmBNLgFYWUlqo8pknMiPovbBc0idJBE+aphvjbHEL22JAewNq03NtZzZI/wBrreRCVq+ededwLw5sHUIlRgS76PuqgAMtPULVqYa0hBybGBVolrpGicD5ARa9G0FLU2kDogsxJKmVBUSkBWPVH0xckkcI2PPkq54V6dXn/KVEDrd4Tvv1/PmuwOIyPDiJsQRxBEJk0RlztHdFnD9sxrGx4pN7IKn34X6utSo/PBBhzQQ3NoW37k76+u6HSrZQ4FocCIcx02jQgi4cNnDmNCQRGYGpadOAJ2629EZtGRJvcfIqdxWaVJEWHmj1y4tY136W5RyGdzr+LinKNId0gRx4gjcHyKmvhIc0O3BOblJuUXryc4uEsNAYTez2HTnrP59vVdqdhmlXLG3a8sg86rml3TpwcFh4CmAXgEQ1kODoGYS3NHPcc2hfQ8FWbiK9EOaQQWOjUNYfdPZ3t+9IIS56s6XOfDyHtswHE1wNQ9o8GMDZ/OC87gsA+q/I2BALnOcYYxrbuc87AefCV6r22w//ALmqWzJe51zNybjpO3NZjGBmHGodVeA86DKDsdxb1PFaddZJGfwttrDq0WgkNJIBsSMpPOJMeaVrC61sKxrqjQ8GC6C0GCSbAAxxRKGNDHP90xrXQWgmHuuYtmFrSesKd84m8sJ1J37T5FQ1sjomKuIc5xlxJ4lxMq+GBcHTwH4SqiKWaE9hHRI8UqWbRdPUcOWgTv6BVAYbUyNLv1EQ3lmsT8/VKtbZQ9+Zw4T4RoE02nCnTwDIpieaNklWcwBA1lloDiDZT7zhojYtmjuBVMpVEza1QEmJjaUEuVZUtamlZrUUBUBUl4CAuFVwVM5K4EoCrXQQeC9f2b2k9rRlcY4G7fIryJatLszEQC0nTTojx9q5uNXtl+fKcrc0j4RHyTBrwADJtvqOjhr4pBmKZOoKae/Pew6AD5JeFyq1XN14mINjf5patTA0nxVHvzPDW3gyeFk9Z1tD+1x/7X7dD6qvBz9mY9iCSVuUsGHHKJzH9Ed/wGjx0vySmI7Oc0ZoMSRMGJGo5G4tz2U2z7F4vuMslQHI7qRmIuodScJkG0A204SpqfiJhqkHkRBHEHVTVYRE8wDsYNx6obBCMTKVVPWLYd5FhodWnRaJpgMaCCZ7w2EXHjp6JCmLiw8fyy0cTii5/cJDWhrGxbusaGg9TBcebisuvbbgTBsnMN5a4dLtPzatbt2jlZRkfpq25uLG+gzEf0qnYDM7u8SXGRJJJMiR1u1aXthhoGHH+h583D+Vl8v2a/H9f+vJ0KIILssgteNYgg26xmaf+F7r2Hp5cS0aDIxx3H/ScSfMN/2ryuGwjnZGbbQNCXHM4xrYDwC9n7JYY+/e90tinI5A52jxgLa3wz+Nysb2ixOapOUGY/bJzAbxw+azPaOoBkpgS0CJAJAIMRPIAD+7ktPDNNTE0wf/ALWHwDs3yCzvbh4FdzWwAwBgAAAEcANLlT1d6i745rCfimNl4a/3szMjIDxEX1vCV921lPOT3nHKBwA1Pr6hdhsNnJ5Anc3vEidJWfWe52vMeWscrrSOarUWBxJLmtHF0xc20BKYpOYyZfM8Gx8zPol2NtbXbw3+aYwnZxfJnLeNJKuWs8Q/G3BbNuMQfqufj3utDQLTAvrx2VKvZ7wYAceYCZfUa6mxg2+Ib92885+qNGOwlPvgHZoLvo35J8galDwNMhpcdXGfBEdT8EQ/pzniPtdKF7zo0cpTUAKhfwTSRL9WvlK1AAYlajmSLpM4J2xEJ6MYakuUQuKaU54UNcmKGHzXU/4cbcUtGA5jsoLDwWkymIgIbmJfI8JtJ3RGlO+7kJR+FdNk5RYo56L/AIxwGWSj4XBNmXyeTSB5mCnGU6bTLWGf9T830CVpzml+zCQS51p0WzRcx1j5rKeV1LEFun39FN8r5ueGtXpkNNzkBtN44X2R29oPIDas1Gji45x0ffyIPgsmpi5y2iHAmCYMX0POE43GMklwgRsI8Y08kbc8xrOpvitOn2Wyr/0nB5/Ye7UHRv6v7SUpjcHVYMxc6GA6/E0bgzq22mnJL0cVmdDBYfqI+gP1Wr252jVdRZTe7MHOFyAXQBpm+LLcWJ2WnPMvg714tedFMm+k7RHpsiMpL27+xsHWpsa2t7mrlaP8wd15Aj4m2E+B4ys7E+y2Jp3NJz27Pp/5jTzlskeICz6s9D457edbTRqbE7WgAMLMrhMm4ceRB4cUJoWPVaznGh2JVyVGO2kT4EH6R4r1vtjg5fSaCLUyRzlx0XjMMBK+kUKBr+4eBmiiwON4lpcHS7a4Wc96q/W+mT7N9jDM0uB+IiOThE+RPmV7IYZrHjK2CW5SQNhJv5nzTeEwjaQkkTx+gU4ojMI1v+eq2/J45lY38ny6yenk3dkNZj6T22afeOcNm9x0RwF/Ty+Ze0WMa+s5xmHPe6dxmcYtuveYntOa2MrA2ZQexvi5tNkep8V8vxRkk/nJTxNundkMYN4FQCWnNaQdeFuO2m6yX0zJ4BxHqfsj0cMS4EWggyeVwr1gMzrzLifNaeqyvmF22Wt2c8AEEcCFle8y3AHU3TnZjy4kk7K5UWeWqHHYQs/3TXPMCBuen3Th4KKjC0d1sn08UDKh9do4BKVMWOvohYkvPxQOX/CXsNU5E0R+JcdLdFfDugkE2uT6boDqjR8Lb8TfylBe8uMlFExssIiRdWKSwdRzhEwBqRqnWvEKbWmeHkiFSLph7UNjFowO4MQFP3Q6TyNEdplTYp0LnqwUOSw0BytnQSuBQDOdcXoTSpe0hAWUFqqwojY+yDSGyCFSnVGhVg5DewaolArHlhzC7fyxTeM7Rz5BJLWyYOxJEx5LHz81LXK4Xy+np61cGC1wc0/nmmsJ2xVpwWPc3kCY8RovM4OvBg6FaFTFZWhkCZkEfFB25hZdT6dHP5PD2WG9rHvhtTvDo1w/2un0WjRxdJ//AMNFx50mNPkNV4CjmsYyzv8AZOPrkHUzbc7aLn6/FL6b8fln3HuRiWNPdo0m9GM+oVP/AFA9nwkxMxoBOtgvJMxzjFyfVNPxb2Dv2kWG8dBolzzObuNreOo9Jje3XvaHF0EQdV6at2iBhzXB0oyP6tB6r5e7ETvPJbvaGOLOzKbf1Pe5v9rC5x9SweK3/L+0jn6yeGE7tEso1W2l76QjWWtFRzvXIs7E4mk9ocWZXWBgktJA4fRJYhxm6Ue5PnnGfXQmIxJdpYJdqneAuhDO0N4TeEBa2dJQW0pKcaxVELMqAEZieitWxDplk881x/CXeLqXMJ/VATVoGcuJzGCNUN7VSs8h0z0MRP3VWPLjBMdEM0HkuhHcxUyoGCYStkdJEgiCFL60xyACDCsg9JkLn07SuXK0JonZOMbChcgRJaqkFcuU1QZVFy5IotTMyFcOMQuXINLHRNgZtfbmOanKVy5SaQFaFK5UHA6i0EQZAPzSlenFxp8ly5KC+g2OWlhquZ4dEEN9QVy5V16Ln20GdoG7AbHXcT90wxoOqhcsepI2lrVwlNsWiVn4ii4vJe6ei5cs57b/AEobXCtjsa57GMPw0y8j+/LP/aFy5acp6ZVRhiZSpKlcqY1zWIoYuXJxNFoAA3/4RXmFy5OJAcLyiuEiFy5FXA6tIEDlp9QksZh8vebYfJcuSg6i+Gqhwjca/dGc1cuTqZ6Bc1VXLkyf/9k=" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block mb-5 bg-white border rounded mx-auto" style="width: 50% !important; ">
+          <h5 class="text-dark text-uppercase">Second Slide</h5>
+          <p class="text-dark">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-primary">
+            Shop Now
+          </button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" height="450" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2y1pye_-wm3d7JipnqHNMivmcTqHeJUNmdg&usqp=CAU" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block mb-5 bg-white border rounded mx-auto" style="width: 50% !important; ">
+          <h5 class="text-dark text-uppercase">Third Slide</h5>
+          <p class="text-dark">Lorem ipsum dolor sit amet.</p>
+          <button class="btn btn-primary">
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 col-md-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="text-center font-weight-bold">CATEGORIES</h4>
+              <hr>
+              <ul class="list-unstyled mb-0">
+                <li class="mt-1"><a href="#">Category Name</a></li>
+                <li class="mt-1"><a href="#">Category Name</a></li>
+                <li class="mt-1"><a href="#">Category Name</a></li>
+                <li class="mt-1"><a href="#">Category Name</a></li>
+                <li class="mt-1"><a href="#">Category Name</a></li>
+                <li class="mt-1"><a href="#">Category Name</a></li>
+
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="text-center text-uppercase font-weight-bold">Popular Tags</h4>
+              <hr>
+            <div>
+              <button class="btn btn-secondary btn-sm">Tag</button>
+              <button class="btn btn-secondary btn-lg">Tag</button>
+              <button class="btn btn-secondary btn-sm">Tag</button>
+              <button class="btn btn-secondary btn">Tag</button>
+              <button class="btn btn-secondary btn-sm">Tag</button>
+
+            </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-12 col-md-9 mt-4 mt-md-0">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body py-3">
+              <h4 class="text-center font-weight-bold text-uppercase m-0">Top Sales</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+          <div class="card-body">
+            <p class="m-0 card-title">Product Name</p>
+            <div class="text-center">
+              <span class="badge badge-success">999.99$</span>
+              <span class="badge badge-danger">-20$</span>
+              <span class="badge badge-primary">NEW</span>
+
+            </div>
+            <div class="text-center">
+              <span class="badge badge-info">Kids</span>
+              <span class="badge badge-info">Men</span>
+              <span class="badge badge-info">Women</span>
+
+            </div>
+            <p class="my-2 text-truncate">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+            </p>
+            <div class="text-center">
+              <button class="btn btn-sm btn-secondary">Details</button>
+              <button class="btn btn-sm btn-success">Add to Cart</button>
+
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body py-3">
+              <h4 class="text-center font-weight-bold text-uppercase m-0">New Products</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mt-2 mt-lg-0">
+          <div class="card">
+            <img height="250" class="card-img-top "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc-rV3fh8rEehVmHch9IABH2BEaF46lPxBOA&usqp=CAU" alt="">
+            <div class="card-body">
+              <p class="m-0 card-title">Product Name</p>
+              <div class="text-center">
+                <span class="badge badge-success">999.99$</span>
+                <span class="badge badge-danger">-20$</span>
+                <span class="badge badge-primary">NEW</span>
+
+              </div>
+              <div class="text-center">
+                <span class="badge badge-info">Kids</span>
+                <span class="badge badge-info">Men</span>
+                <span class="badge badge-info">Women</span>
+
+              </div>
+              <p class="my-2 text-truncate">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at doloribus dolorum explicabo fugit iure libero natus nihil, odio optio placeat qui quidem quis sint voluptatibus! A deleniti eius fugiat impedit itaque magnam minus rerum similique vel! Amet, consectetur deserunt est minima nulla pariatur velit voluptatem. Commodi est impedit modi molestiae officiis praesentium quae, quidem quisquam quod sint. A aliquam cumque dolores, eum nemo non officia officiis quas quia quo saepe, sed ullam ut veritatis, voluptate? Alias, dolorem earum excepturi incidunt ipsum laboriosam nam nihil numquam provident quas soluta unde veniam voluptas? Accusamus explicabo fugiat modi reiciendis veniam. Architecto, blanditiis.
+              </p>
+              <div class="text-center">
+                <button class="btn btn-sm btn-secondary">Details</button>
+                <button class="btn btn-sm btn-success">Add to Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="jumbotron jumbotron-fluid mb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <p class="font-weight-bold">Quick Links</p>
+        <hr>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#"></a>Customer Service</li>
+          <li><a href="#"></a>Privacy Policy</li>
+          <li><a href="#"></a>Contact Us</li>
+          <li><a href="#"></a>Help</li>
+          <li><a href="#"></a>FAQ</li>
+
+        </ul>
+      </div>
+      <div class="col-12 col-md-3">
+        <p>Contact Us</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, tempore.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+      </div>
+
+      <div class="col-12 col-md-6">
+        <p>Location</p>
+        <hr>
+        <img class="rounded w-100" height="250"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkXAvGVHN5u-Yu6vYBKXOrk1x-smmPX4Wag&usqp=CAU" alt="">
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.1/umd/popper.min.js" integrity="sha512-8jeQKzUKh/0pqnK24AfqZYxlQ8JdQjl9gGONwGwKbJiEaAPkD3eoIjz3IuX4IrP+dnxkchGUeWdXLazLHin+UQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+</body>
+</html>
